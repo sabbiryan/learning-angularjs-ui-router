@@ -1,0 +1,36 @@
+﻿<h1>{{title}}</h1>
+
+<ul>
+    <li ng-class="{'text-muted': !friend.isSpecial}" ng-repeat="friend in friends" class="list-unstyled">
+        <input type="text" ng-model="friend.name"/>
+        <input type="text" ng-model="friend.age"/>
+        <input type="text" ng-model="friend.year"/>
+        <button ng-click="friends.splice($index,1)" class="btn btn-danger">-</button>
+    </li>
+</ul>
+
+<button type="button" class="btn btn-primary" ng-click="save()">Save</button>
+
+<br/>
+<br/>
+<br/>
+
+<div class="form-group">
+    <div class="col-sm-3">
+        <input type="text" ng-model="title" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+        <input type="text" class="form-control" ng-model="myValue"/>
+    </div>
+    <div class="col-sm-3">
+        {{myValue}}
+    </div>
+    <div class="col-sm-3">
+        <select ng-model="selectedValue" ng-options="value for value in items" class="form-control"></select>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
