@@ -1,2 +1,2 @@
-# Basics of angular ui router
+# Basic use of angular ui router
 
